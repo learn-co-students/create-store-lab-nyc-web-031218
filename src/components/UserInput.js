@@ -16,8 +16,9 @@ class UserInput extends Component {
       type: 'ADD_USER',
       user: {username: this.state.username, hometown: this.state.hometown}
     })
+    this.setState({username: '', hometown: ''})
   }
-  
+
   render() {
     return(
       <div>
